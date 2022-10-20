@@ -1,0 +1,37 @@
+program tugaslab_no2;
+uses crt;
+
+var 
+    m : integer;
+    
+begin
+clrscr;
+    writeln('          MENU           ');
+    writeln('Ayam Bakar          : 001');
+    writeln('Ayam Goreng         : 102');
+    writeln('Ayam Betutu         : 203');
+    writeln('Ayam Gulai          : 304');
+    writeln('Roti Bakar          : 405');
+    writeln('Martabak Manis Mini : 506');
+    writeln('Nasi Goreng         : 607');
+    writeln('Mie Kuah            : 708');
+    writeln('Mie Goreng          : 809');
+    
+    write('Masukkan Kode Menu : ');
+
+    readln(m);
+    
+    case m of
+        001 : writeln('Ayam Bakar  : Rp9.000,00'); 
+        102 : writeln('Ayam Goreng : Rp10.000,00');
+        203 : writeln('Ayam Betutu : Rp15.000,00');
+        304 : writeln('Ayam Gulai  : Rp13.000,00');
+        405 : writeln('Roti Bakar  : Rp7.000,00');
+        506 : writeln('Martabak Manis Mini : Rp7.000,00');
+        607 : writeln('Nasi Goreng : Rp12.000,00');
+        809 : writeln('Mie Goreng  : Rp11.000,00');
+        708 : writeln('Mie Kuah    : Rp10.000,00');
+    else
+        writeln('tidak dalam menu');
+    end;
+end.

@@ -1,0 +1,24 @@
+program tugaslab_no1;
+uses crt;
+
+var
+    a, b, c : real;
+    
+begin
+clrscr;
+    
+    write('Masukkan Nilai 1 : '); readln(a);
+    write('Masukkan Nilai 2 : '); readln(b);
+    write('Masukkan Nilai 3 : '); readln(c);
+    
+    if (a>b) and (a>c) then
+      begin
+        write('Urutan: ',b:1:0,' ',c:1:0,' ',a:1:0);
+      end
+    else if (b<a) and (c<a) then
+      begin
+        write('Urutan: ',b:1:0,' ',c:1:0,' ',a:1:0);
+      end;
+
+    readln;
+end.

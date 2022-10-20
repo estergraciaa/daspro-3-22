@@ -1,0 +1,28 @@
+program tugaslab_no3;
+uses crt;
+
+var
+    huruf : char;
+    
+begin
+clrscr;
+    write('Identifikasi Huruf : ');
+    
+    readln(huruf);
+  
+    case huruf of
+    'a' : writeln('Huruf Vokal');
+    'A' : writeln('Huruf Vokal');
+    'i' : writeln('Huruf Vokal');
+    'I' : writeln('Huruf Vokal');
+    'u' : writeln('Huruf Vokal');
+    'U' : writeln('Huruf Vokal');
+    'e' : writeln('Huruf Vokal');
+    'E' : writeln('Huruf Vokal');
+    'o' : writeln('Huruf Vokal');
+    'O' : writeln('Huruf Vokal');
+    
+    else
+    writeln('Huruf Konsonan');
+    end;
+end.
